@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- .wage-calculator  -->
+
+    <div class="wage-calculator">
+        <div class="top">
+            <h2>Llogaritja e Pagës</h2>
+
+            <form action="#">
+                <div class="group">
+                    <div class="title">Paga</div>
+                    <input type="text" class="paga-amount" id="paga">
+                </div>
+                <div class="container">
+                    <fieldset>
+                        <div class="some-class">
+                          <input type="radio" class="radio" name="bruto-neto" value="bruto" id="y" />
+                          <label for="y">Bruto</label>
+                          <input type="radio" class="radio" name="bruto-neto" value="neto" id="z" />
+                          <label for="z">Neto</label>
+                        </div>
+                      </fieldset>
+                </div>
+            </form>
+        </div>
+
+        <div class="butoni">
+            <button class="calculate-btn" id="calculate">Llogarit</button>
+                Bruto:
+                <input type="text" value="20000" class="pagat">Neto:
+                <input type="text" value="20000" class="pagat">
+        </div>
+        
+        <div class="result">
+            
+            <div class="left">
+                
+                <div class="sig-shoq-punemarresi">
+                    <h3>Sigurime shoqërore Punëmarrësi (9.5%)</h3>
+                    <div class="value" id="value">000</div>
+                </div>
+                <div class="sig-shoq-punedhenesi">
+                    <h3>Sigurime shoqërore Punëdhënësi (1.7%)</h3>
+                    <div class="value">000</div>
+                </div>
+                <div class="sig-shend-punemarresi">
+                    <h3>Sigurime shëndetsore Punëmarrësi(1.7%)</h3>
+                    <div class="value">000</div>
+                </div>
+                <div class="sig-shend-punedhenesi">
+                    <h3>Sigurime shëndetsore Punëdhënësi (15%)</h3>
+                    <div class="value">000</div>
+                </div>
+                <div class="tap">
+                    <h3>TAP</h3>
+                    <div class="value">000</div>
+                </div>
+            </div>
+
+            <div class="right">Chart</div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+
+</body>
+</html>

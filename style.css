@@ -1,0 +1,163 @@
+.wage-calculator{
+    font-family: "Roboto", sans-serif;
+    width: 600px;
+    margin: 24px auto;
+    background: #fff;
+    box-shadow: 0 12px 50px -11px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    color: #14213d;
+    overflow: hidden;
+}
+
+.wage-calculator,
+.wage-calculator *{
+    box-sizing: border-box;
+}
+
+.wage-calculator .top{
+    /* background: #14213d; */
+    background: #4e1756;
+    color: #fff;
+    padding: 32px;
+}
+
+.wage-calculator .top h2{
+    margin-top: 0;
+}
+
+.wage-calculator form{
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+}
+
+.wage-calculator .title{
+    margin-bottom: 16px;
+}
+
+.wage-calculator form input{
+    font-size: 20px;
+    padding: 8px 24px;
+    /* width: 100%; */
+    border-radius: 8px;
+}  
+
+.wage-calculator .result{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wage-calculator .result .left{
+    width: 100%;
+    padding: 8px 32px 32px 32px;
+}
+
+.wage-calculator .left h3{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #4e1756;
+}
+
+.wage-calculator .result .value{
+    font-size: 24px;
+    font-weight: 900;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(20, 30, 61, 0.2);
+    color: #4e1756;
+}
+
+.wage-calculator .result .value::before{
+    content: "ALL";
+    font-size: 17px;
+    font-weight: 400;
+    margin-right: 6px;
+    opacity: 0.4;
+}
+
+.wage-calculator .calculate-btn{
+    /* background: #e63946; */
+    background: #4e1756;
+    color: #fff;
+    border: none;
+    padding: 8px 32px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 900;
+    cursor: pointer;
+    margin: 24px 0;
+    margin-right: 36px;
+} 
+
+fieldset {
+    overflow: hidden;
+    border: aliceblue;
+    padding-top: 45px;
+  }
+  
+  .some-class {
+    float: left;
+    clear: none;
+  }
+  
+  label {
+    float: left;
+    clear: none;
+    display: block;
+    padding: 0px 1em 0px 8px;
+  }
+  .label{
+    float: none;
+    clear: none;
+    display: none;
+    padding: 0px 0px 0px 0px;
+  }
+  
+  input[type=radio],
+  input.radio {
+    float: left;
+    clear: none;
+    margin: 2px 0 0 2px;
+  }
+
+.butoni{
+    padding: 8px 32px 0px 32px;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.pagat{
+    width: 100px;
+    height: 30px;
+    margin-left: 5px;
+    margin-right: 20px;
+    padding-left: 10px;
+    border-color: #4e1756;
+    border-radius: 8px;
+}
+
+.pagat::before{
+    content: "ALL";
+    font-size: 17px;
+    font-weight: 400;
+    margin-right: 6px;
+    opacity: 0.4;
+}
+
+@media (max-width: 650px) {
+    .wage-calculator{
+        width: 90%;
+        max-width: 500px;
+    }
+
+    .wage-calculator form{
+         flex-direction: column;
+         gap: 20px;
+    }
+
+    .wage-calculator .result{
+        flex-direction: column;
+        text-align: center;
+    }
+}
