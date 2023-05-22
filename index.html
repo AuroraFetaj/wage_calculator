@@ -35,9 +35,11 @@
 
         <div class="butoni">
             <button class="calculate-btn" id="calculate">Llogarit</button>
+            <!-- <p id="output"></p> -->
                 Bruto:
-                <input type="text" value="20000" class="pagat">Neto:
-                <input type="text" value="20000" class="pagat">
+                <input type="text" value="" class="pagat" id="bruto">Neto:
+                <input type="text" value="" class="pagat" id="neto">
+                <!-- <div id="outputi"></div> -->
         </div>
         
         <div class="result">
@@ -50,25 +52,30 @@
                 </div>
                 <div class="sig-shoq-punedhenesi">
                     <h3>Sigurime shoqërore Punëdhënësi (1.7%)</h3>
-                    <div class="value">000</div>
+                    <div class="value" id="value2">000</div>
                 </div>
                 <div class="sig-shend-punemarresi">
                     <h3>Sigurime shëndetsore Punëmarrësi(1.7%)</h3>
-                    <div class="value">000</div>
+                    <div class="value" id="value3">000</div>
                 </div>
                 <div class="sig-shend-punedhenesi">
                     <h3>Sigurime shëndetsore Punëdhënësi (15%)</h3>
-                    <div class="value">000</div>
+                    <div class="value" id="value4">000</div>
                 </div>
                 <div class="tap">
                     <h3>TAP</h3>
-                    <div class="value">000</div>
+                    <div class="value" id="value5">000</div>
                 </div>
             </div>
 
-            <div class="right">Chart</div>
+            <div class="right">
+                <canvas id="myChart" width="400" height="400"></canvas>
+            </div>
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.2/dist/chart.min.js"></script>
+
     <script src="main.js"></script>
 
 </body>

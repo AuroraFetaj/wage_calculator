@@ -1,6 +1,6 @@
 .wage-calculator{
     font-family: "Roboto", sans-serif;
-    width: 600px;
+    width: 900px; 
     margin: 24px auto;
     background: #fff;
     box-shadow: 0 12px 50px -11px rgba(0,0,0,0.2);
@@ -135,6 +135,8 @@ fieldset {
     padding-left: 10px;
     border-color: #4e1756;
     border-radius: 8px;
+    font-weight: 800;
+    color: #4e1756
 }
 
 .pagat::before{
@@ -144,6 +146,10 @@ fieldset {
     margin-right: 6px;
     opacity: 0.4;
 }
+
+.wage-calculator .right {
+    width: 50%;
+  }
 
 @media (max-width: 650px) {
     .wage-calculator{
