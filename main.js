@@ -19,10 +19,10 @@ function calculateSigurimeShoqerorePunemarresi(paga) {
     let sigShoqPunemarresi = 0;
 
     if(paga < 176416){
-        sigShoqPunemarresi = paga * 0.095;
+        sigShoqPunemarresi = Math.round(paga * 0.095);
     }
     else if(paga >= 176416){
-        sigShoqPunemarresi = 176416 * 0.095;
+        sigShoqPunemarresi = Math.round(176416 * 0.095);
     }
   
     return sigShoqPunemarresi;
