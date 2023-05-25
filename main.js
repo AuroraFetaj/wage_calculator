@@ -30,7 +30,14 @@ function calculateSigurimeShoqerorePunemarresi(paga) {
 
   function calculateSigurimeShoqerorePunedhenesi(paga) {
 
-    let sigShoqPunedhenesi = Math.round(paga *0.017);
+    let sigShoqPunedhenesi = 0;
+
+    if(paga < 176416){
+        sigShoqPunedhenesi = Math.round(paga * 0.15);
+    }
+    else if(paga >= 176416){
+        sigShoqPunedhenesi = Math.round(176416 * 0.15);
+    }
   
     return sigShoqPunedhenesi;
   }
@@ -44,7 +51,7 @@ function calculateSigurimeShoqerorePunemarresi(paga) {
 
   function calculateSigurimeShendetsorePunedhenesi(paga) {
 
-    let sigShendPunedhenesi = Math.round(paga *0.15);
+    let sigShendPunedhenesi = Math.round(paga *0.017);
   
     return sigShendPunedhenesi;
   }
